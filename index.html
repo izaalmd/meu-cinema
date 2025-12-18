@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Cinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Meu Cinema</h1>
+        <nav>
+            <button class="tab-btn active" data-tab="filmes">Filmes</button>
+            <button class="tab-btn" data-tab="series">Séries</button>
+            <button class="tab-btn" data-tab="animes">Animes</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="filmes" class="tab-content active">
+            <h2>Meus Filmes Favoritos</h2>
+            <div class="grid" id="filmes-grid"></div>
+        </div>
+
+        <div id="series" class="tab-content">
+            <h2>Minhas Séries Favoritas</h2>
+            <div class="grid" id="series-grid"></div>
+        </div>
+
+        <div id="animes" class="tab-content">
+            <h2>Meus Animes Favoritos</h2>
+            <div class="grid" id="animes-grid"></div>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
